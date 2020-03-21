@@ -1,0 +1,40 @@
+
+<div class="container" id="con1">
+    <div class="row" id="tab"><div class="panel panel-default">
+        <div class="panel-heading">
+            <h4>
+                COVID-19 Report
+              </h4>
+            </div>
+        <table class="table table-fixed">
+            <thead>
+            <tr>
+                <th id="country" class="col-xs-2">Country</th>
+                <th class="col-xs-2">Cases</th>
+                <th class="col-xs-2">Deaths</th>
+                <th id="todayDeaths" class="col-xs-2">TodayDeaths</th>
+                <th id="recovered" class="col-xs-2">Recovered</th>
+                <th class="col-xs-2">Active</th>
+                <th id="critical" class="col-xs-2">Critical</th>
+                <th class="col-xs-2">CasesPerOneMillion</th>
+            </tr>
+        </thead>
+        
+            <tbody *ngFor="let hero of country">
+                <tr>
+                  <th scope="row" id="country"><a href="#">{{hero.country}}</a></th>
+                  <td>{{hero.cases}}</td>
+                  <td>{{hero.deaths}}</td>
+                  <td id="todayDeaths">{{hero.todayDeaths}}</td>
+                  <td id="recovered">{{hero.recovered}}</td>
+                  <td>{{hero.active}}</td>
+                  <td id="critical">{{hero.critical}}</td>
+                  <td>{{hero.casesPerOneMillion}}</td>
+                  
+                </tr>
+            
+
+
+</table>
+</div>
+</div>
